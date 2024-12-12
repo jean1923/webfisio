@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Cita</title>
+  <link rel="stylesheet" href="cssparte222.css">
+</head>
+<body>
+  <div class="container">
+    <div class="left-panel">
+      <h1>Solicita tu cita a través del formulario</h1>
+      <p><strong>Horario de atención:</strong></p>
+      <ul>
+        <li>Lunes a Viernes de 7:00 a.m. a 6:00 p.m.</li>
+        <li>Sábados de 8:00 a.m. a 12:00 p.m.</li>
+      </ul>
+    </div>
+    <div class="right-panel">
+      <form>
+        <div class="form-group">
+          <label for="nombre">Nombre<span>*</span></label>
+          <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+        </div>
+        <div class="form-group">
+          <label for="apellidos">Apellidos<span>*</span></label>
+          <input type="text" id="apellidos" name="apellidos" placeholder="Escribe tus apellidos" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Correo electrónico<span>*</span></label>
+          <input type="email" id="email" name="email" placeholder="Escribe tu email" required>
+        </div>
+        <div class="form-group">
+          <label for="telefono">Teléfono<span>*</span></label>
+          <input type="tel" id="telefono" name="telefono" placeholder="Teléfono" required>
+        </div>
+        <div class="form-group">
+          <label for="servicio">¿Qué tipo de servicio necesitas agendar?<span>*</span></label>
+          <select id="servicio" name="servicio" required>
+            <option value="" disabled selected>Selecciona el servicio o especialidad</option>
+            <option value="consulta">Consulta</option>
+            <option value="tratamiento">Tratamiento</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>¿Tengo seguro médico?</p>
+          <label><input type="radio" name="seguro" value="sí" required> Sí</label>
+          <label><input type="radio" name="seguro" value="no"> No</label>
+        </div>
+        <div class="form-group">
+          <label for="disponibilidad">Disponibilidad horaria</label>
+          <input type="text" id="disponibilidad" name="disponibilidad" placeholder="Escribe tu disponibilidad">
+        </div>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </div>
+  <script src ="citamedica.js"></script> 
+</body>
+</html>
